@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rocklan.SwaggerGen.Callbacks</name>
+    </assembly>
+    <members>
+        <member name="T:Rocklan.SwaggerGen.Callbacks.AdditionalSchemaDocumentFilter`1">
+            <summary>
+            Adds extra schemas (models) to the swagger page. Useful for callback payload objects
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Rocklan.SwaggerGen.Callbacks.AdditionalSchemaDocumentFilter`1.Apply(Microsoft.OpenApi.Models.OpenApiDocument,Swashbuckle.AspNetCore.SwaggerGen.DocumentFilterContext)">
+            <summary>
+            Generates a schema for the supplied type
+            </summary>
+            <param name="swaggerDoc"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Rocklan.SwaggerGen.Callbacks.CallbacksOperationFilter">
+            <summary>
+            Adds support for callbacks to the swagger doc
+            </summary>
+        </member>
+        <member name="M:Rocklan.SwaggerGen.Callbacks.CallbacksOperationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Modifies the operations section of the swagger page to add callbacks
+            </summary>
+            <param name="operation"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Rocklan.SwaggerGen.Callbacks.SwaggerCallbackSchemaAttribute">
+            <summary>
+            Add this attribute to an enum's fields to indicate it is a callback
+            </summary>
+        </member>
+        <member name="P:Rocklan.SwaggerGen.Callbacks.SwaggerCallbackSchemaAttribute.SchemaType">
+            <summary>
+            Unique type (eg, an enum's property) of this callback
+            </summary>
+        </member>
+        <member name="P:Rocklan.SwaggerGen.Callbacks.SwaggerCallbackSchemaAttribute.Description">
+            <summary>
+            Short description of this callback
+            </summary>
+        </member>
+        <member name="P:Rocklan.SwaggerGen.Callbacks.SwaggerCallbackSchemaAttribute.ExampleAddress">
+            <summary>
+            Example URL to show on the swagger page
+            </summary>
+        </member>
+        <member name="M:Rocklan.SwaggerGen.Callbacks.SwaggerCallbackSchemaAttribute.#ctor(System.Type,System.String,System.String)">
+            <summary>
+            Creates a new SwaggerCallbackSchemaAttribute
+            </summary>
+            <param name="schemaType"></param>
+            <param name="exampleAddress"></param>
+            <param name="description"></param>
+        </member>
+    </members>
+</doc>
