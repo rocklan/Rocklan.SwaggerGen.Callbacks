@@ -1,5 +1,7 @@
 # Rocklan.SwaggerGen.Callbacks
-Adds support for displaying callbacks (webhooks) info in swagger via swashbuckle
+Adds support for displaying callbacks (webhooks) information in swagger via swashbuckle:
+
+![Callback information displayed in swagger UI](https://raw.githubusercontent.com/rocklan/Rocklan.SwaggerGen.Callbacks/master/Example.png)
 
 ## Basic Usage
 
